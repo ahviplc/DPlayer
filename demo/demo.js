@@ -50,7 +50,7 @@ function initPlayers () {
           url: 'subtitle test'
         },
         danmaku: {
-          id: '9E2E3368B56CDBB4',
+          id: '9E2E3368B56CDBB411',
           api: 'https://api.prprpr.me/dplayer/'
         }
     });
@@ -60,12 +60,12 @@ function initPlayers () {
         preload: 'none',
         screenshot: true,
         video: {
-            url: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4',
-            pic: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.png',
-            thumbnails: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara_thumbnails.jpg'
+            url: 'http://static.smartisanos.cn/common/video/t1-ui.mp4',
+            pic: 'http://static.smartisanos.cn/pr/img/video/video_03_cc87ce5bdb.jpg',
+            thumbnails: 'http://static.smartisanos.cn/pr/img/video/video_03_cc87ce5bdb.jpg'
         },
         subtitle: {
-            url: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.vtt'
+            url: 'dplayer1 subtitle test '
         },
         danmaku: {
             id: '9E2E3368B56CDBB4',
@@ -82,17 +82,17 @@ function initPlayers () {
         loop: true,
         screenshot: true,
         hotkey: true,
-        logo: 'https://moeplayer.b0.upaiyun.com/dplayer/DPlayer.png',
+        logo: 'http://www.oneplusone.top/static/userImages/20170927015329.jpg',
         volume: 0.2,
         mutex: true,
         video: {
-            url: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4',
-            pic: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.png',
-            thumbnails: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara_thumbnails.jpg',
+            url: 'http://static.smartisanos.cn/common/video/t1-ui.mp4',
+            pic: 'http://static.smartisanos.cn/pr/img/video/video_03_cc87ce5bdb.jpg',
+            thumbnails: 'http://static.smartisanos.cn/pr/img/video/video_03_cc87ce5bdb.jpg',
             type: 'auto'
         },
         subtitle: {
-            url: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.vtt',
+            url: 'dplayer2 subtitle test ',
             type: 'webvtt',
             fontSize: '25px',
             bottom: '10%',
@@ -242,28 +242,28 @@ function clearPlayers () {
 }
 
 function switchDPlayer () {
-    if (dp2.option.danmaku.id !== '5rGf5Y2X55qu6Z2p') {
+    if (dp2.danmaku.options.api.id !== '9E2E3368B56CDBB4') {
         dp2.switchVideo({
-            url: 'https://moeplayer.b0.upaiyun.com/dplayer/flowerdance.mp4',
-            pic: 'https://moeplayer.b0.upaiyun.com/dplayer/flowerdance.jpg',
+            url: 'http://static.smartisanos.cn/common/video/t1-ui.mp4',
+            pic: 'http://static.smartisanos.cn/pr/img/video/video_03_cc87ce5bdb.jpg',
             type: 'auto',
         }, {
-            id: '5rGf5Y2X55qu6Z2p',
+            id: '9E2E3368B56CDBB4',
             api: 'https://api.prprpr.me/dplayer/',
             maximum: 3000,
-            user: 'DIYgod'
+            user: 'ahviplc'
         });
-    } else {
+    } else {//你的意味-IU
         dp2.switchVideo({
-            url: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4',
-            pic: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.png',
-            thumbnails: 'https://moeplayer.b0.upaiyun.com/dplayer/hikarunara_thumbnails.jpg',
+            url: 'http://183.60.197.29/16/z/a/g/u/zaguxbrdvfydqxbrtfjdvuclzvwnys/hd.yinyuetai.com/F45C01641DFB08B90FE1575A49923EE0.mp4',
+            pic: 'http://p1.music.126.net/vvep8oWbYOhpWchNu4C8qg==/6022025185715205.jpg?param=130y130',
+            thumbnails: 'http://p1.music.126.net/vvep8oWbYOhpWchNu4C8qg==/6022025185715205.jpg?param=130y130',
             type: 'auto'
         }, {
             id: '9E2E3368B56CDBB42',
             api: 'https://api.prprpr.me/dplayer/',
             maximum: 3000,
-            user: 'DIYgod'
+            user: 'shviplc'
         });
     }
 }
